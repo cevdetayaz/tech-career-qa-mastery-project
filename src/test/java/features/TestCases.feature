@@ -16,6 +16,7 @@ Feature: TestCases
     When Navigate to Web Site
     Then Verify that home page is displayed successfully
 
+
   Scenario: add item to Takip List and remove it
     When Click Giris Yap Link
     And Enter email address and password

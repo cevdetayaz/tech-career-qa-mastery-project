@@ -20,6 +20,8 @@ public class BookmarkingSteps {
         bookmarkPage.verifyThatSearchResultDisplayed();
     }
 
+
+
     @When("Click and display second page of search results")
     public void clickAndDisplaySecondPageOfSearchResults() {
         bookmarkPage.clickAndDisplaySecondPageOfSearchResults();

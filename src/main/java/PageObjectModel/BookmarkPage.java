@@ -1,10 +1,7 @@
 package PageObjectModel;
 
 import Utilities.Driver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -19,7 +16,7 @@ public class BookmarkPage {
     private final String searchBarInput = "//*[@id=\"q\"]";
     private final String searchResultPage = "https://www.akakce.com/arama/?q=samsung";
     private final CharSequence searchItemValue = "samsung";
-    private final String clickNextPage = "//div[2]/p[2]/a[2]";
+    private final String clickNextPage = "//a[text()='Sonraki']";
     private final String secondSearchResultPage = "https://www.akakce.com/arama/?q=samsung&p=2";
     private final String itemNameLocator = "//li[3]/a/span/h3";
     private final String thirdTakipEtButton = "(//span[text()='Takip Et'])[3]";
@@ -44,6 +41,7 @@ public class BookmarkPage {
         // bulunduğu sayfayı doğrulamak için Assert kullandım.
         Assert.assertEquals(pageName, searchResultPage);
     }
+
 
     public void clickAndDisplaySecondPageOfSearchResults() {
         driver.findElement(By.xpath(clickNextPage)).click();

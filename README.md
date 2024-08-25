@@ -1,6 +1,4 @@
 
-# Selenium-Cucumber-BDD-TestNG-Usage-Demo
-
 Merhaba,
 
 Bu projede [akakce.com](https://www.akakce.com) sayfasını kullandım. Kullanıcı girişi, ürünü takibe alıp takipten kaldırma ve doğrulama işlemlerini otomasyona uyguladım.
@@ -20,12 +18,12 @@ Adımlar aşağıdaki gibidir:
 
 ### Yararlanılan Teknolojiler
 * Java 
-* Selenium WebDriver (ChromeDriver 107.0.5304.62)
+* Selenium WebDriver (ChromeDriver)
 * Maven
 * BDD
 * Cucumber 
 * TestNG 
-* Windows 11 üzerinde Chrome 106 and 107 stable sürümlerinde test edilmiştir. 
+
 
 ### Kaynaklar
 * https://www.selenium.dev/documentation/webdriver/

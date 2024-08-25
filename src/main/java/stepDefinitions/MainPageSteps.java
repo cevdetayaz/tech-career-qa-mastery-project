@@ -7,6 +7,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import static java.lang.Thread.sleep;
+
 
 public class MainPageSteps {
     MainPage mainPage = new MainPage();
@@ -17,9 +19,12 @@ public class MainPageSteps {
     }
 
     @Then("Verify that home page is displayed successfully")
-    public void verifyThatHomePageIsDisplayedSuccessfully() {
+    public void verifyThatHomePageIsDisplayedSuccessfully()  {
         mainPage.verifyThatHomePageIsDisplayedSuccessfully();
     }
+
+
+
 
     /* Test Run bittikten sonra chrome uygulamasını tamamen kapatır.
     Her hangi bir Steps dosyası içine yazılabilir. Senaryo sonunda çalışır.
